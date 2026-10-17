@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahd Al-Khateeb | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Shahd Al-Khateeb</h1>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button id="themeButton" type="button">Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section hero-section">
+            <div class="hero-text">
+                <p class="intro">Hello, I'm</p>
+                <h2>Shahd Jehad Al-Khateeb</h2>
+                <h3>Network Security Engineering</h3>
+
+                <p>
+                    Interested in cybersecurity, network security,
+                    system administration, and practical security projects.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="main-button">View My Projects</a>
+                    <a href="#contact" class="second-button">Contact Me</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/shahd-j-alkhateeb"
+                       target="_blank"
+                       rel="noopener noreferrer">LinkedIn</a>
+
+                    <a href="https://github.com/s1kh"
+                       target="_blank"
+                       rel="noopener noreferrer">GitHub</a>
+
+                    <a href="mailto:Shahad.j.alkhateeb@gmail.com">Email</a>
+                </div>
+            </div>
+
+            <div class="about-image">
+                <img src="assets/profile.jpg" alt="Shahd Al-Khateeb">
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+
+            <div class="about-text">
+                <p>
+                    I'm a Network Security Engineer with a strong interest
+                    in cybersecurity, network security, and system administration.
+                </p>
+
+                <p>
+                    My technical experience includes network scanning,
+                    traffic analysis, security monitoring, log analysis,
+                    and Windows Server administration using tools such as
+                    Nmap, Wireshark, and Elastic with Kibana.
+                </p>
+
+                <p>
+                    I'm passionate about identifying security risks,
+                    analyzing technical challenges, and applying security
+                    practices through hands-on projects.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">Networking</div>
+                <div class="skill-card">Cybersecurity</div>
+                <div class="skill-card">Linux</div>
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Git</div>
+                <div class="skill-card">Wireshark</div>
+                <div class="skill-card">Nmap</div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+
+            <div class="projects-container">
+                <a class="project-card"
+                   href="https://github.com/s1kh/discovery-web-piscine"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <h3>Project 00</h3>
+                    <p>
+                        Linux and Git fundamentals, including workspace
+                        organization and version control.
+                    </p>
+                    <span>View Project →</span>
+                </a>
+
+                <a class="project-card"
+                   href="https://github.com/s1kh/Project01"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <h3>Project 01</h3>
+                    <p>
+                        Web development fundamentals using HTML
+                        and semantic page structure.
+                    </p>
+                    <span>View Project →</span>
+                </a>
+
+                <a class="project-card"
+                   href="https://github.com/s1kh/Project02"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <h3>Project 02</h3>
+                    <p>
+                        CSS styling, layout, positioning,
+                        and responsive web design.
+                    </p>
+                    <span>View Project →</span>
+                </a>
+
+                <a class="project-card"
+                   href="https://github.com/s1kh/Project03"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <h3>Project 03</h3>
+                    <p>
+                        JavaScript fundamentals, DOM manipulation,
+                        and interactive web pages.
+                    </p>
+                    <span>View Project →</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+
+            <p class="contact-description">
+                Have a question or an opportunity?
+                Feel free to contact me.
+            </p>
+
+            <form id="contactForm"
+                  action="https://formspree.io/f/xljglkwv"
+                  method="POST"
+                  class="contact-form">
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <p id="formStatus"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Shahd Al-Khateeb. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
